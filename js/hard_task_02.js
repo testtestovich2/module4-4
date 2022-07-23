@@ -6,7 +6,8 @@
 // Не используйте Math.max и Math.min
 
 const minNumber = (num1, num2) => {
-    return num1 > num2 ? num1 : num2;
+    return (num1 < num2)*num1 + (num1 > num2)*num2;
+    //при false = 0; true = 1
 }
 
-console.log(minNumber(5, 10))
+console.log(minNumber(155, 10))
